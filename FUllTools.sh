@@ -3,26 +3,54 @@ function Fulltools() {
         clear
         figlet -k -f slant "Fulltools" | lolcat
 }
+
 function listTools() {
-        echo -e "[01]Cal\t\t[02]Date\t[03]Pwd\n[04]User\t[05]Train\t[06]Telnet\n[07]Fortune\t[08]Cowsay\t[09]Xcowsay\n[10]Factor\t[11]Reverse\t[12]Aafire\n[13]Cmatrix\t[14]Espeak\t[15]DateColor\n[16]TextStyle\t[17]linuxlogo\t[18]Neofetch\n[19]Xeyes\t[00]Exit\n\n" | lolcat
+        echo -e "
+[01]Cal         [02]Date        [03]Pwd
+[04]User        [05]Train       [06]Telnet
+[07]Fortune     [08]Cowsay      [09]Xcowsay
+[10]Factor      [11]Reverse     [12]Aafire
+[13]Cmatrix     [14]Espeak      [15]DateColor
+[16]TextStyle   [17]linuxlogo   [18]Neofetch
+[19]Xeyes       [00]Exit\n\n" | lolcat
 }
 function Banner() {
         clear
         figlet -k -f slant "Fulltools" | lolcat 
-        echo -e "\n"
-        echo -e "[01]Cal\t\t[02]Date\t[03]Pwd\n[04]User\t[05]Train\t[06]Telnet\n[07]Fortune\t[08]Cowsay\t[09]Xcowsay\n[10]Factor\t[11]Reverse\t[12]Aafire\n[13]Cmatrix\t[14]Espeak\t[15]DateColor\n[16]TextStyle\t[17]linuxlogo\t[18]Neofetch\n[19]Xeyes\t[00]Exit\n\n" | lolcat
+        echo -e "
+[01]Cal         [02]Date        [03]Pwd
+[04]User        [05]Train       [06]Telnet
+[07]Fortune     [08]Cowsay      [09]Xcowsay
+[10]Factor      [11]Reverse     [12]Aafire
+[13]Cmatrix     [14]Espeak      [15]DateColor
+[16]TextStyle   [17]linuxlogo   [18]Neofetch
+[19]Xeyes       [00]Exit\n\n" | lolcat
 }
 function CowsayBanner(){
         clear
         Fulltools
-        echo -e "\n"
-        echo -e "[01]Cowsay\t\t[02]Cowthink\t[03]Skeleton\n[04]Tux\t\t\t[05]Dragon\t[06]Apt\n[07]Bud-frogs\t\t[08]Bunny\t[09]Calvin\n[10]Cheese\t\t[11]Cock\t[12]Cowert\n[13]Daemon\t\t[14]Dragoncow\t[15]duck\n[16]Kosh\t\t[17]www\t\t[18]Turtle\n[19]Moose\t\t[20]Unipony\t[21]Koala\n[22]Kiss\t\t[23]Fox\t\t[24]Milk\n" | lolcat
+        echo -e "
+[01]Cowsay      [02]Cowthink    [03]Skeleton
+[04]Tux         [05]Dragon      [06]Apt
+[07]Bud-frogs   [08]Bunny       [09]Calvin
+[10]Cheese      [11]Cock        [12]Cowert
+[13]Daemon      [14]Dragoncow   [15]duck
+[16]Kosh        [17]www         [18]Turtle
+[19]Moose       [20]Unipony     [21]Koala
+[22]Kiss        [23]Fox         [24]Milk\n" | lolcat
 }
 function TextStyleBanner() {
         clear
         Fulltools
         echo -e "\n"
-        echo -e "[01]Toilet\t[02]Figlet\t[03]Banner\n[04]Smblock\t[05]Script\t[06]big\n[07]block\t[08]bubble\t[09]digital\n[10]ivrit\t[11]lean\t[12]mini\n[13]mnemonic\t[14]shadow\t[15]slant\n[16]small\t[17]smscript\t[18]smshadow\n[19]smslant\t[20]Metal\t[21]BorderMetal\n[22]\t\t[23]\t\t[24]\n" | lolcat
+        echo -e "
+[01]Toilet      [02]Figlet      [03]Banner
+[04]Smblock     [05]Script      [06]big
+[07]block       [08]bubble      [09]digital
+[10]ivrit       [11]lean        [12]mini
+[13]mnemonic    [14]shadow      [15]slant
+[16]small       [17]smscript    [18]smshadow
+[19]smslant     [20]Metal       [21]BorderMetal\n" | lolcat
 }
 function Ifcow(){
         if [[ $CowNumber == 1 ]]; then
@@ -259,6 +287,8 @@ while [ true ]; do
                 neofetch
                 echo -e "\n"
                 listTools
+        elif [[ $Number == 19 ]];then
+                xeyes
         elif [[ $Number == 0 ]];then
                 exit
         fi
